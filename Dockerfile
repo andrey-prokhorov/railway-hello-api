@@ -7,6 +7,9 @@ RUN npm ci --omit=dev
 
 COPY --chown=node:node . .
 
+ARG APP_VERSION=dev
+ENV APP_VERSION=$APP_VERSION
+
 USER node
 
 EXPOSE 3000
