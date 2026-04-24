@@ -289,7 +289,7 @@ jobs:
 
 SQLite-databasen måste överleva redeploys.
 
-1. I API-tjänsten → **Volumes** → **Create Volume**
+1. I API-projektet → höger-klick "Add New Service" → **Volumes** → **Create Volume**
 2. Mount path: `/app/data`
 3. Railway skapar en persistent disk och monterar den vid `/app/data` i containern
 4. Databasefilen på den sökvägen överlever nu alla framtida redeploys
